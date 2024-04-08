@@ -7,9 +7,18 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<p id="timer">
+		
+	</div>
+    <script>
+		const timer = document.getElementById('timer');
+		function calculateDate_Time() {
+			const time = new Date();
+			timer.innerHTML = time;
+		}
+			setInterval(calculateDate_Time, 1000);
+		
+	</script>
 
 </body>
 
